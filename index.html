@@ -432,7 +432,7 @@
             </svg>
           </button>
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-          <form class="form">
+          <form class="form" autocomplete="off">
             <label class="form__label" for="user-name">
               <span class="form__label-text">Ім'я</span>
               <span class="form__input-container">
@@ -470,7 +470,13 @@
               ></textarea>
             </label>
             <label class="form__label-policy" for="policy">
-              <input type="checkbox" value="" id="policy" name="policy" />
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                value=""
+                id="policy"
+                name="policy"
+              />
               <span class="form__policy-text"
                 >Погоджуюся з розсилкою та приймаю
                 <a class="policy-link" href="">Умови договору</a></span
